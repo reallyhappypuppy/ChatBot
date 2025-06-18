@@ -5,8 +5,8 @@ import torch
 app = Flask(__name__)
 
 # 모델과 토크나이저 로드
-tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large")
-model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-large")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
+model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-small")
 
 # 대화 히스토리 저장용
 chat_history_ids = None
